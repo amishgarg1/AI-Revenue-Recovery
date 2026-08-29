@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r backend/requirements.txt
+
+      - name: Tests
+        run: python -m pytest backend/tests -q
+        env:
+          PYTHONPATH: backend
+
+      # The whole submission rests on `make demo` working from a clean clone.
+      # Running it in CI is the only way to know it still does.
+      - name: Full demo from a clean checkout
+        run: |
+          python backend/scripts/seed.py --quiet
+          python backend/scripts/run_batch.py
+          python backend/scripts/make_report.py
+          python backend/scripts/sensitivity.py
+        env:
+          PYTHONPATH: backend
+
+      # An audit trail nobody checks automatically is one that quietly stops
+      # being intact. This exits non-zero on a broken chain.
+      - name: Audit chain integrity
+        run: python backend/scripts/verify_ledger.py
+        env:
+          PYTHONPATH: backend
+
+      # Same seed, same clock, same numbers — on any machine. If a change makes
+      # the run non-deterministic, EVALUATION.md drifts and this catches it.
+      - name: Results are reproducible
+        run: |
+          git diff --exit-code -- EVALUATION.md docs/data/results.json \
+            || (echo "::error::Re-running the batch changed the committed results. Either the run is non-deterministic, or EVALUATION.md was not regenerated after a change." && exit 1)
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npx eslint src --max-warnings 0
+      - run: npm run build
