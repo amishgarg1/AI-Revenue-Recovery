@@ -1,0 +1,88 @@
+# RecoverOS policy
+#
+# The eleven gates enforce these rules; they do not own them. Every number
+# below is a merchant's decision, and a merchant in another country will
+# disagree with the first one before they finish reading it.
+#
+# Deleting this file is legitimate. The engine falls back to exactly these
+# values, which are the ones the committed evaluation was produced with.
+#
+# A typo is not: unknown keys are rejected at load rather than silently
+# ignored, because a misspelled key is a rule you believe you set and did not.
+
+defaults:
+
+  # ------------------------------------------------------------- when to talk
+  # India's norm, and the one gate that suppresses the most volume. Every night
+  # in the batch is visible as a flat stretch on the activity chart.
+  quiet_start_ist: 21          # 9 PM
+  quiet_end_ist: 9             # 9 AM
+
+  # Voice is narrower than messaging. A WhatsApp at 8 PM is a notification; a
+  # phone call at 8 PM is an intrusion.
+  voice_start_ist: 10          # 10 AM
+  voice_end_ist: 19            # 7 PM
+
+  # ---------------------------------------------------------- how much to talk
+  # Per case, and then per person across all their cases - someone with three
+  # failed payments is still one person having one bad week.
+  max_touches_per_case: 3
+  max_touches_24h: 1
+  max_touches_7d: 3
+  cooldown_hours: 6
+
+  # ------------------------------------------------------------ what it costs
+  # Never spend more than this share of what is at stake.
+  max_cost_ratio: 0.15
+
+  # Below this, automated recovery loses money even though the per-message
+  # ratio looks fine. A 30 paise WhatsApp against a Rs 40 order is 0.75% - but
+  # the message is not the real cost. A contacted customer replies, and a reply
+  # costs support time. Fully loaded, an attempt is worth roughly Rs 50 of
+  # somebody's attention, so anything under that is chased at a loss however
+  # cheap the channel looks.
+  min_viable_amount_paise: 5000        # Rs 50
+
+  # Contacting someone who has revoked consent, or who is on the DND registry,
+  # is not a wasted rupee - it is a regulatory exposure. Priced conservatively
+  # so the "value protected" figure is defensible rather than flattering.
+  compliance_risk_paise: 50000         # Rs 500
+
+  # What each rung costs to send.
+  tier_cost_paise:
+    0: 0                       # silent retry against the gateway
+    1: 30                      # WhatsApp, Rs 0.30
+    2: 20                      # SMS, Rs 0.20
+    3: 150                     # voice call, Rs 1.50
+    4: 5000                    # Rs 50 of an agent's time
+
+  # A voice call is only worth placing above this much at risk.
+  voice_min_amount_paise: 200000       # Rs 2,000
+
+
+# Merchants state only what differs. Repeating the whole policy per merchant is
+# how two of them silently drift apart six months later.
+merchants:
+
+  # A subscription business in the UK. Different quiet hours because the
+  # customers are in a different timezone, a tighter contact budget because
+  # their brand is quieter, and a higher floor because their average order is
+  # larger and their support costs more.
+  #
+  # Nothing in the engine changes. The same eleven gates read different numbers
+  # and refuse different things.
+  merchant_uk_subs:
+    quiet_start_ist: 2         # 8:30 PM UK
+    quiet_end_ist: 14          # 8:30 AM UK
+    voice_start_ist: 15
+    voice_end_ist: 22
+    max_touches_7d: 2
+    cooldown_hours: 24
+    min_viable_amount_paise: 30000     # Rs 300
+
+  # A high-volume marketplace that wants to chase smaller amounts and is
+  # willing to spend more of each one doing it.
+  merchant_marketplace:
+    max_cost_ratio: 0.25
+    min_viable_amount_paise: 2000      # Rs 20
+    max_touches_24h: 2
