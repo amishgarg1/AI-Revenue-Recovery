@@ -1,0 +1,7 @@
+# Normalise line endings so the repo is identical on Windows, macOS and Linux.
+* text=auto eol=lf
+
+# The pre-seeded demo database is binary; byte-identical checkout matters
+# because the numbers in EVALUATION.md are derived from it.
+*.db binary
+*.ico binary
