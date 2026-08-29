@@ -1,0 +1,36 @@
+# Render deployment for the RecoverOS API.
+#
+# The filesystem on the free tier is ephemeral, so the committed demo.db can
+# disappear on a restart. `app.main` recreates the schema at startup and the
+# build seeds it, so the service comes back with real data rather than 500s on
+# every route.
+
+services:
+  - type: web
+    name: recoveros-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: |
+      pip install -r requirements.txt
+      PYTHONPATH=. python scripts/seed.py --quiet
+      PYTHONPATH=. python scripts/run_batch.py
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHONPATH
+        value: .
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      # Set to the Vercel URL. The app also allows *.vercel.app by regex, so a
+      # preview deployment works without redeploying the backend.
+      - key: CORS_ORIGINS
+        sync: false
+      # Optional. Without them the API serves deterministic templates and
+      # simulated payment links, and /api/health says so.
+      - key: RZP_KEY_ID
+        sync: false
+      - key: RZP_KEY_SECRET
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
