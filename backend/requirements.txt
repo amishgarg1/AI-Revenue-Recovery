@@ -1,0 +1,19 @@
+# Python 3.9+. Developed on 3.9 and 3.11; nothing here needs a newer syntax.
+#
+# Lower bounds are pinned where the version actually matters and left open
+# otherwise, so a judge installing this in six months gets something that still
+# works rather than something that no longer resolves.
+
+fastapi>=0.110
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0.25        # 2.0 ORM style is used throughout
+pydantic>=2.6             # model_validate_json, used by the LLM validator
+requests>=2.31
+httpx>=0.26               # fastapi.testclient
+pyyaml>=6.0               # config/policy.yaml — the gates' numbers
+python-multipart>=0.0.9   # CSV upload on /api/ingest/plan
+pytest>=8.0
+
+# Optional. The batch runs without it, on deterministic fallback templates —
+# which is also what happens if the provider is down mid-run.
+litellm>=1.40
