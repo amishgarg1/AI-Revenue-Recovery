@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens.
+ *
+ * Committed to dark: this sits beside a terminal in a live demo, and a surface
+ * that flips to white on someone else's laptop mid-presentation is not worth
+ * the flexibility.
+ *
+ * The series colours are not chosen by eye. They were run through a
+ * colour-vision validator against this exact surface (#111214) and clear the
+ * lightness band, the chroma floor, adjacent-pair CVD separation, the
+ * normal-vision floor, and 3:1 contrast. Changing one means re-running it.
+ */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces — four planes, so depth comes from elevation rather than borders */
+  --plane: #08090a;
+  --surface: #111214;
+  --surface-raised: #16181b;
+  --surface-inset: #0c0d0f;
+
+  --line: #23262b;
+  --line-strong: #32363d;
+
+  /* Ink */
+  --ink: #f4f5f7;
+  --ink-2: #a8adb7;
+  --ink-3: #6b7280;
+  --ink-4: #464b54;
+
+  /* Series — validated categorical slots */
+  --treatment: #3987e5;  /* the arm we worked */
+  --guard: #d95926;      /* refusals */
+  --recovered: #199e70;  /* money back */
+
+  /* The control arm is deliberately achromatic. It is the do-nothing
+     baseline, and giving it a hue would make it read as a third thing being
+     done rather than as the absence of action. */
+  --control: #8b909a;
+
+  /* Status — reserved, never reused as a series colour */
+  --good: #0ca30c;
+  --warn: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+
+  /* Chart chrome */
+  --grid: #1c1f23;
+  --axis: #2b2f35;
+}
+
+body {
+  background: var(--plane);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numbers must line up in columns. */
+.font-mono,
+.tnum {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* A quiet grid on the page plane — reads as instrumentation, not decoration. */
+.grid-plane {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: -1px -1px;
+}
+
+.hairline {
+  border: 1px solid var(--line);
+}
+
+/* Used on the hero figure and live counters. */
+@keyframes tick-in {
+  from { opacity: 0; transform: translateY(2px); }
+  to   { opacity: 1; transform: none; }
+}
+.tick-in {
+  animation: tick-in 240ms ease-out both;
+}
+
+@keyframes pulse-ring {
+  0%   { opacity: 0.9; transform: scale(1); }
+  70%  { opacity: 0;   transform: scale(2.6); }
+  100% { opacity: 0;   transform: scale(2.6); }
+}
+.pulse-ring {
+  animation: pulse-ring 1.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tick-in,
+  .pulse-ring {
+    animation: none;
+  }
+}
+
+/*
+ * Scrollbars are hidden. Scrolling still works — wheel, trackpad, keyboard and
+ * touch are all untouched; only the visible track and thumb are gone, so the
+ * panels read as one uninterrupted surface on screen and on camera.
+ */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* legacy Edge */
+}
+
+/* ==========================================================================
+   Display type
+   ==========================================================================
+   Instrument Serif, and only where it earns its place: page titles and the
+   figures a viewer is meant to stop on. It is a high-contrast face, so at
+   14px it thins out and loses to Inter; at 40px+ it is the reason the page
+   does not look like every other dashboard.
+
+   Optical sizing: large serif text needs tighter tracking than its metrics
+   give by default, or it reads loose and accidental.
+*/
+.display {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  line-height: 1.04;
+}
+
+/* The hero figure. Serif numerals rather than mono: this is one number a
+   viewer stops on, not a column that has to align, and mono here reads as
+   telemetry when it should read as a result. */
+.display-figure {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+  font-variant-numeric: lining-nums;
+}
+
+/* ==========================================================================
+   Entrance
+   ==========================================================================
+   The first two seconds decide whether somebody keeps looking. Everything
+   arriving at once is the same as nothing arriving; a short stagger makes the
+   page assemble itself, which reads as deliberate.
+
+   Kept small on purpose - 8px and 380ms. Anything larger becomes a thing the
+   viewer waits through on the second visit.
+*/
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.rise {
+  animation: rise 380ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Stagger children by position. Capped at eight: past that the last card is
+   arriving half a second late and the effect turns into a delay. */
+.stagger > *              { animation: rise 380ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 45ms; }
+.stagger > *:nth-child(3) { animation-delay: 90ms; }
+.stagger > *:nth-child(4) { animation-delay: 135ms; }
+.stagger > *:nth-child(5) { animation-delay: 180ms; }
+.stagger > *:nth-child(6) { animation-delay: 225ms; }
+.stagger > *:nth-child(7) { animation-delay: 270ms; }
+.stagger > *:nth-child(n+8) { animation-delay: 300ms; }
+
+/* A line that draws itself. The divergence chart is the one picture that
+   carries the argument, and watching the two arms separate says more than
+   seeing them already apart. */
+@keyframes draw {
+  from { stroke-dashoffset: var(--draw-length, 2000); }
+  to   { stroke-dashoffset: 0; }
+}
+
+.draw {
+  stroke-dasharray: var(--draw-length, 2000);
+  animation: draw 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ==========================================================================
+   Surfaces that respond
+   ==========================================================================
+   A card that does nothing on hover reads as an image of a card. The lift is
+   1px - enough to register, not enough to shift the layout underneath.
+*/
+.card-lift {
+  transition:
+    border-color 180ms ease,
+    transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 180ms ease;
+}
+
+.card-lift:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
+}
+
+/* A wash behind the hero, so the most important figure on the page sits on
+   something rather than floating on the same flat plane as everything else. */
+.hero-wash {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-wash::before {
+  content: "";
+  position: absolute;
+  /* Stays inside its container. A first version bled -10% past each edge for
+     a softer falloff and put 65px of horizontal scroll on <main>, which has
+     overflow-y:auto and therefore computes overflow-x to auto as well - so
+     the whole page slid sideways for a glow nobody asked to scroll to. The
+     same softness comes from widening the gradient instead. */
+  inset: -20% 0 auto 0;
+  height: 420px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    85% 100% at 18% 0%,
+    color-mix(in oklab, var(--recovered) 12%, transparent),
+    transparent 72%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .stagger > *,
+  .draw {
+    animation: none;
+  }
+  .draw { stroke-dasharray: none; }
+  .card-lift { transition: none; }
+  .card-lift:hover { transform: none; }
+}
+
+/* The divergence chart reveals left to right, as if the seven days were
+   passing. A stroke-dash draw was the other option and could not work: the
+   control line is dashed for identity, and animating dashoffset would have
+   fought that. A sweep reveals the wedge, the quiet-hour bands and both lines
+   together, which is also truer - they happened together. */
+@keyframes sweep {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.chart-sweep {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: sweep 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-sweep { animation: none; }
+}
