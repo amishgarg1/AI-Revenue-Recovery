@@ -170,6 +170,9 @@ class Orchestrator:
         self._last_tier = {}                         # case_id -> tier
         self._seen_blocks = set()                    # (case_id, gate, reason)
         self._action_seq = 0
+        self._existing_action_ids = set(
+            r[0] for r in self.db.query(Action.action_id).all()
+        )
 
         # A case under cooldown, or a customer inside their 24h frequency cap,
         # cannot possibly become actionable for a known number of ticks. Parking
@@ -474,8 +477,12 @@ class Orchestrator:
 
     # ------------------------------------------------------------------ effects
     def _next_action_id(self) -> str:
-        self._action_seq += 1
-        return f"act_{self._action_seq:06d}"
+        while True:
+            self._action_seq += 1
+            candidate = f"act_{self._action_seq:06d}"
+            if candidate not in self._existing_action_ids:
+                self._existing_action_ids.add(candidate)
+                return candidate
 
     def _record_block(self, case: Case, intent: ActionIntent, decision,
                       tick_index: int, now):
