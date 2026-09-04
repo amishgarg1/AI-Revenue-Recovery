@@ -1,0 +1,2553 @@
+{
+  "committed": {
+    "treatment_rate": 0.3343558282208589,
+    "control_rate": 0.1901840490797546,
+    "net_lift": 0.1441717791411043,
+    "ci_lower": 0.07387839617315316,
+    "ci_upper": 0.21446516210905542,
+    "is_significant": true
+  },
+  "sweep_factors": [
+    0.4,
+    0.6,
+    0.8,
+    1.0,
+    1.2,
+    1.4,
+    1.6,
+    2.0
+  ],
+  "parameters": [
+    {
+      "label": "Every marginal lift per rung",
+      "kind": "marginal_all",
+      "key": null,
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.21319018404907975,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.02300613496932513,
+          "ci_lower": -0.044950820770228384,
+          "ci_upper": 0.09096309070887865,
+          "is_significant": false
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.2392638036809816,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.04907975460122699,
+          "ci_lower": -0.019493311246550085,
+          "ci_upper": 0.11765282044900406,
+          "is_significant": false
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.26993865030674846,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.07975460122699385,
+          "ci_lower": 0.010537763601717945,
+          "ci_upper": 0.14897143885226977,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.36349693251533743,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.17331288343558282,
+          "ci_lower": 0.10265144840369643,
+          "ci_upper": 0.2439743184674692,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3941717791411043,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.20398773006134968,
+          "ci_lower": 0.13301705570576552,
+          "ci_upper": 0.27495840441693387,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.4279141104294479,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.23773006134969327,
+          "ci_lower": 0.16651062694197968,
+          "ci_upper": 0.3089494957574068,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.4892638036809816,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.299079754601227,
+          "ci_lower": 0.22765044787356653,
+          "ci_upper": 0.37050906132888745,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.02300613496932513,
+      "high_lift": 0.299079754601227,
+      "swing_pp": 27.607361963190186,
+      "impact": "material",
+      "breaks_at": 0.4,
+      "breaking_point": 0.759
+    },
+    {
+      "label": "Recovery probability ceiling",
+      "kind": "ceiling",
+      "key": null,
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.2714723926380368,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.08128834355828218,
+          "ci_lower": 0.012041576057605904,
+          "ci_upper": 0.15053511105895845,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.0663187090201712,
+          "ci_upper": 0.20668742594915393,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.08128834355828218,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 6.288343558282211,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "Every no-intervention baseline",
+      "kind": "baseline_all",
+      "key": null,
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.16717791411042945,
+          "control_rate": 0.06134969325153374,
+          "net_lift": 0.1058282208588957,
+          "ci_lower": 0.059164169047263904,
+          "ci_upper": 0.1524922726705275,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.200920245398773,
+          "control_rate": 0.08588957055214724,
+          "net_lift": 0.11503067484662577,
+          "ci_lower": 0.062150019221650886,
+          "ci_upper": 0.16791133047160064,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.25153374233128833,
+          "control_rate": 0.15337423312883436,
+          "net_lift": 0.09815950920245398,
+          "ci_lower": 0.03358714416115535,
+          "ci_upper": 0.1627318742437526,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3619631901840491,
+          "control_rate": 0.22085889570552147,
+          "net_lift": 0.14110429447852763,
+          "ci_lower": 0.0675084886811895,
+          "ci_upper": 0.21470010027586575,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3941717791411043,
+          "control_rate": 0.24539877300613497,
+          "net_lift": 0.14877300613496933,
+          "ci_lower": 0.07280382753317868,
+          "ci_upper": 0.22474218473675997,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.4217791411042945,
+          "control_rate": 0.26993865030674846,
+          "net_lift": 0.15184049079754602,
+          "ci_lower": 0.07385611599666743,
+          "ci_upper": 0.22982486559842463,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.4892638036809816,
+          "control_rate": 0.3312883435582822,
+          "net_lift": 0.15797546012269942,
+          "ci_lower": 0.07616153671125483,
+          "ci_upper": 0.239789383534144,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.09815950920245398,
+      "high_lift": 0.15797546012269942,
+      "swing_pp": 5.981595092024544,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "AUTO_RETRY tier 0 lift",
+      "kind": "marginal_one",
+      "key": "('AUTO_RETRY', 0)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.30214723926380366,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.11196319018404904,
+          "ci_lower": 0.04216220526142296,
+          "ci_upper": 0.18176417510667514,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3098159509202454,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.11963190184049077,
+          "ci_lower": 0.04970543586763823,
+          "ci_upper": 0.18955836781334331,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3159509202453988,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.12576687116564417,
+          "ci_lower": 0.05574374502690169,
+          "ci_upper": 0.19578999730438665,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15337423312883436,
+          "ci_lower": 0.08295673860236412,
+          "ci_upper": 0.22379172765530458,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.348159509202454,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15797546012269936,
+          "ci_lower": 0.08749864667841344,
+          "ci_upper": 0.22845227356698528,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3604294478527607,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1702453987730061,
+          "ci_lower": 0.0996192794516655,
+          "ci_upper": 0.2408715180943467,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.11196319018404904,
+      "high_lift": 0.1702453987730061,
+      "swing_pp": 5.828220858895705,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "RETRY_TIMED tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('RETRY_TIMED', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3128834355828221,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1226993865030675,
+          "ci_lower": 0.052724177609993816,
+          "ci_upper": 0.19267459539614118,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.31441717791411045,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.12423312883435583,
+          "ci_lower": 0.05423385821578974,
+          "ci_upper": 0.19423239945292192,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3450920245398773,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1549079754601227,
+          "ci_lower": 0.08447050563710756,
+          "ci_upper": 0.22534544528313782,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3558282208588957,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1656441717791411,
+          "ci_lower": 0.09507253213615047,
+          "ci_upper": 0.23621581142213172,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1226993865030675,
+      "high_lift": 0.1656441717791411,
+      "swing_pp": 4.294478527607359,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "RETRY_TIMED tier 0 lift",
+      "kind": "marginal_one",
+      "key": "('RETRY_TIMED', 0)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.30828220858895705,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.11809815950920244,
+          "ci_lower": 0.04819637516303811,
+          "ci_upper": 0.18799994385536678,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3220858895705521,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1319018404907975,
+          "ci_lower": 0.061785350142402454,
+          "ci_upper": 0.20201833083919257,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.0663187090201712,
+          "ci_upper": 0.20668742594915393,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15337423312883436,
+          "ci_lower": 0.08295673860236412,
+          "ci_upper": 0.22379172765530458,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3496932515337423,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1595092024539877,
+          "ci_lower": 0.08901302034622745,
+          "ci_upper": 0.23000538456174796,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.11809815950920244,
+      "high_lift": 0.1595092024539877,
+      "swing_pp": 4.1411042944785255,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "RETRY_TIMED baseline",
+      "kind": "baseline_one",
+      "key": "RETRY_TIMED",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.2668711656441718,
+          "control_rate": 0.12883435582822086,
+          "net_lift": 0.13803680981595093,
+          "ci_lower": 0.0764091312471257,
+          "ci_upper": 0.19966448838477616,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.2791411042944785,
+          "control_rate": 0.1411042944785276,
+          "net_lift": 0.13803680981595093,
+          "ci_lower": 0.07446079070297798,
+          "ci_upper": 0.20161282892892388,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.30214723926380366,
+          "control_rate": 0.15950920245398773,
+          "net_lift": 0.14263803680981593,
+          "ci_lower": 0.07629016822729554,
+          "ci_upper": 0.20898590539233633,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3450920245398773,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1549079754601227,
+          "ci_lower": 0.08447050563710756,
+          "ci_upper": 0.22534544528313782,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3588957055214724,
+          "control_rate": 0.19631901840490798,
+          "net_lift": 0.1625766871165644,
+          "ci_lower": 0.09134314469658218,
+          "ci_upper": 0.23381022953654662,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.36349693251533743,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.1610429447852761,
+          "ci_lower": 0.0891494485710539,
+          "ci_upper": 0.23293644099949828,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.39263803680981596,
+          "control_rate": 0.22085889570552147,
+          "net_lift": 0.17177914110429449,
+          "ci_lower": 0.09788262388934295,
+          "ci_upper": 0.24567565831924604,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13803680981595093,
+      "high_lift": 0.17177914110429449,
+      "swing_pp": 3.374233128834356,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "SWITCH_METHOD tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('SWITCH_METHOD', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.31901840490797545,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.12883435582822084,
+          "ci_lower": 0.05876413642445892,
+          "ci_upper": 0.19890457523198274,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3205521472392638,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13036809815950917,
+          "ci_lower": 0.060274640595843254,
+          "ci_upper": 0.2004615557231751,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.32515337423312884,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13496932515337423,
+          "ci_lower": 0.06480738455380153,
+          "ci_upper": 0.20513126575294693,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34202453987730064,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15184049079754602,
+          "ci_lower": 0.08144317412061719,
+          "ci_upper": 0.22223780747447486,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3512269938650307,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1610429447852761,
+          "ci_lower": 0.09052759588952612,
+          "ci_upper": 0.23155829368102604,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.12883435582822084,
+      "high_lift": 0.1610429447852761,
+      "swing_pp": 3.220858895705525,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "AUTO_RETRY baseline",
+      "kind": "baseline_one",
+      "key": "AUTO_RETRY",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.2929447852760736,
+          "control_rate": 0.17791411042944785,
+          "net_lift": 0.11503067484662574,
+          "ci_lower": 0.04671164287674916,
+          "ci_upper": 0.1833497068165023,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.30368098159509205,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.11963190184049083,
+          "ci_lower": 0.050456326596727816,
+          "ci_upper": 0.18880747708425383,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3113496932515337,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.12116564417177911,
+          "ci_lower": 0.0512147034223054,
+          "ci_upper": 0.19111658492125283,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.34202453987730064,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.1395705521472393,
+          "ci_lower": 0.06793663146401353,
+          "ci_upper": 0.21120447283046506,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3450920245398773,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.0709646557523617,
+          "ci_upper": 0.2143114178672702,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.35276073619631904,
+          "control_rate": 0.2085889570552147,
+          "net_lift": 0.14417177914110432,
+          "ci_lower": 0.07181237832964692,
+          "ci_upper": 0.21653117995256171,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3665644171779141,
+          "control_rate": 0.22699386503067484,
+          "net_lift": 0.13957055214723926,
+          "ci_lower": 0.0653847238460584,
+          "ci_upper": 0.21375638044842013,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.11503067484662574,
+      "high_lift": 0.14417177914110432,
+      "swing_pp": 2.914110429447858,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "NUDGE_CUSTOMER tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('NUDGE_CUSTOMER', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.31901840490797545,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.12883435582822084,
+          "ci_lower": 0.05876413642445892,
+          "ci_upper": 0.19890457523198274,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3236196319018405,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1334355828220859,
+          "ci_lower": 0.06329626486180948,
+          "ci_upper": 0.20357490078236232,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15337423312883436,
+          "ci_lower": 0.08295673860236412,
+          "ci_upper": 0.22379172765530458,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.12883435582822084,
+      "high_lift": 0.15337423312883436,
+      "swing_pp": 2.4539877300613524,
+      "impact": "material",
+      "breaks_at": null
+    },
+    {
+      "label": "NUDGE_CUSTOMER baseline",
+      "kind": "baseline_one",
+      "key": "NUDGE_CUSTOMER",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.31441717791411045,
+          "control_rate": 0.1656441717791411,
+          "net_lift": 0.14877300613496935,
+          "ci_lower": 0.08148752603268994,
+          "ci_upper": 0.21605848623724877,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3159509202453988,
+          "control_rate": 0.1656441717791411,
+          "net_lift": 0.1503067484662577,
+          "ci_lower": 0.08299645103930207,
+          "ci_upper": 0.2176170458932133,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.0663187090201712,
+          "ci_upper": 0.20668742594915393,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.19631901840490798,
+          "net_lift": 0.147239263803681,
+          "ci_lower": 0.07619470886478573,
+          "ci_upper": 0.21828381874257624,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.348159509202454,
+          "control_rate": 0.19631901840490798,
+          "net_lift": 0.151840490797546,
+          "ci_lower": 0.08073714007241545,
+          "ci_upper": 0.22294384152267654,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3558282208588957,
+          "control_rate": 0.2085889570552147,
+          "net_lift": 0.147239263803681,
+          "ci_lower": 0.07484347829046183,
+          "ci_upper": 0.21963504931690014,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13650306748466257,
+      "high_lift": 0.151840490797546,
+      "swing_pp": 1.5337423312883431,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "CHECKOUT_ABANDONED tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('CHECKOUT_ABANDONED', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34202453987730064,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15184049079754602,
+          "ci_lower": 0.08144317412061719,
+          "ci_upper": 0.22223780747447486,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1380368098159509,
+      "high_lift": 0.15184049079754602,
+      "swing_pp": 1.3803680981595123,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "NUDGE_CUSTOMER tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('NUDGE_CUSTOMER', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.0663187090201712,
+          "ci_upper": 0.20668742594915393,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13650306748466257,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 1.3803680981595068,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "MANDATE_REPAIR tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('MANDATE_REPAIR', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1380368098159509,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 1.2269938650306733,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "MANDATE_REPAIR tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('MANDATE_REPAIR', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3282208588957055,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06783023806475719,
+          "ci_upper": 0.20824338156714461,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14110429447852757,
+          "ci_lower": 0.0708539091141098,
+          "ci_upper": 0.21135467984294534,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1380368098159509,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 1.2269938650306733,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "RECEIVABLE_CHASE baseline",
+      "kind": "baseline_one",
+      "key": "RECEIVABLE_CHASE",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07310124930154539,
+          "ci_upper": 0.21217482431808654,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07763583509684673,
+          "ci_upper": 0.2168426925105152,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.19631901840490798,
+          "net_lift": 0.14263803680981593,
+          "ci_lower": 0.07165408365791105,
+          "ci_upper": 0.21362198996172083,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34202453987730064,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.1395705521472393,
+          "ci_lower": 0.06793663146401353,
+          "ci_upper": 0.21120447283046506,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.2085889570552147,
+          "net_lift": 0.13496932515337426,
+          "ci_lower": 0.06272379260248656,
+          "ci_upper": 0.20721485770426196,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13496932515337426,
+      "high_lift": 0.14723926380368096,
+      "swing_pp": 1.2269938650306704,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "RECEIVABLE_CHASE tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('RECEIVABLE_CHASE', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14110429447852757,
+          "ci_lower": 0.0708539091141098,
+          "ci_upper": 0.21135467984294534,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14110429447852757,
+          "ci_lower": 0.0708539091141098,
+          "ci_upper": 0.21135467984294534,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34202453987730064,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15184049079754602,
+          "ci_lower": 0.08144317412061719,
+          "ci_upper": 0.22223780747447486,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14110429447852757,
+      "high_lift": 0.15184049079754602,
+      "swing_pp": 1.0736196319018454,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "AUTO_RETRY tier 1 lift",
+      "kind": "marginal_one",
+      "key": "('AUTO_RETRY', 1)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.32975460122699385,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13957055214723924,
+          "ci_lower": 0.06934197149343535,
+          "ci_upper": 0.20979913280104312,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14110429447852757,
+          "ci_lower": 0.0708539091141098,
+          "ci_upper": 0.21135467984294534,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13957055214723924,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 1.0736196319018398,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "SWITCH_METHOD baseline",
+      "kind": "baseline_one",
+      "key": "SWITCH_METHOD",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.31901840490797545,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.13496932515337423,
+          "ci_lower": 0.06554774139738745,
+          "ci_upper": 0.204390908909361,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3220858895705521,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06856852307534725,
+          "ci_upper": 0.20750509655655455,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.32515337423312884,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13496932515337423,
+          "ci_lower": 0.06480738455380153,
+          "ci_upper": 0.20513126575294693,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.13496932515337423,
+          "ci_lower": 0.06339608818672648,
+          "ci_upper": 0.20654256212002198,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.06490940330178628,
+          "ci_upper": 0.20809673166753884,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06642291778384549,
+          "ci_upper": 0.20965070184805631,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34662576687116564,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07247896603198727,
+          "ci_upper": 0.2158645922502213,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13496932515337423,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.9202453987730064,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "RECEIVABLE_CHASE tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('RECEIVABLE_CHASE', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15337423312883436,
+          "ci_lower": 0.08295673860236412,
+          "ci_upper": 0.22379172765530458,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1441717791411043,
+      "high_lift": 0.15337423312883436,
+      "swing_pp": 0.9202453987730064,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "SWITCH_METHOD tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('SWITCH_METHOD', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3312883435582822,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14110429447852757,
+          "ci_lower": 0.0708539091141098,
+          "ci_upper": 0.21135467984294534,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14110429447852757,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 0.9202453987730064,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "CHECKOUT_ABANDONED baseline",
+      "kind": "baseline_one",
+      "key": "CHECKOUT_ABANDONED",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3205521472392638,
+          "control_rate": 0.17791411042944785,
+          "net_lift": 0.14263803680981593,
+          "ci_lower": 0.07386042434758996,
+          "ci_upper": 0.2114156492720419,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3220858895705521,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.1380368098159509,
+          "ci_lower": 0.06856852307534725,
+          "ci_upper": 0.20750509655655455,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3266871165644172,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.0663187090201712,
+          "ci_upper": 0.20668742594915393,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.19631901840490798,
+          "net_lift": 0.13957055214723926,
+          "ci_lower": 0.06862800580029904,
+          "ci_upper": 0.21051309849417948,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.20245398773006135,
+          "net_lift": 0.13650306748466257,
+          "ci_lower": 0.06490940330178628,
+          "ci_upper": 0.20809673166753884,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.34355828220858897,
+          "control_rate": 0.2085889570552147,
+          "net_lift": 0.13496932515337426,
+          "ci_lower": 0.06272379260248656,
+          "ci_upper": 0.20721485770426196,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.35276073619631904,
+          "control_rate": 0.2147239263803681,
+          "net_lift": 0.13803680981595093,
+          "ci_lower": 0.06510351274384146,
+          "ci_upper": 0.2109701068880604,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.13496932515337426,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.9202453987730036,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "RECEIVABLE_CHASE tier 3 lift",
+      "kind": "marginal_one",
+      "key": "('RECEIVABLE_CHASE', 3)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.34049079754601225,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.15030674846625763,
+          "ci_lower": 0.0799298123660893,
+          "ci_upper": 0.22068368456642595,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14263803680981596,
+      "high_lift": 0.15030674846625763,
+      "swing_pp": 0.7668711656441674,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "RETRY_TIMED tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('RETRY_TIMED', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3389570552147239,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1487730061349693,
+          "ci_lower": 0.07841665351495647,
+          "ci_upper": 0.21912935875498213,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14263803680981596,
+      "high_lift": 0.1487730061349693,
+      "swing_pp": 0.6134969325153339,
+      "impact": "moderate",
+      "breaks_at": null
+    },
+    {
+      "label": "MANDATE_REPAIR baseline",
+      "kind": "baseline_one",
+      "key": "MANDATE_REPAIR",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.14877300613496935,
+          "ci_lower": 0.07914777600567098,
+          "ci_upper": 0.21839823626426774,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.14877300613496935,
+          "ci_lower": 0.07914777600567098,
+          "ci_upper": 0.21839823626426774,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.18404907975460122,
+          "net_lift": 0.14877300613496935,
+          "ci_lower": 0.07914777600567098,
+          "ci_upper": 0.21839823626426774,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.33588957055214724,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14570552147239263,
+          "ci_lower": 0.07539094523739338,
+          "ci_upper": 0.2160200977073919,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1441717791411043,
+      "high_lift": 0.14877300613496935,
+      "swing_pp": 0.46012269938650596,
+      "impact": "negligible",
+      "breaks_at": null
+    },
+    {
+      "label": "AUTO_RETRY tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('AUTO_RETRY', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3374233128834356,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14723926380368096,
+          "ci_lower": 0.07690369774535573,
+          "ci_upper": 0.2175748298620062,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14263803680981596,
+      "high_lift": 0.14723926380368096,
+      "swing_pp": 0.4601226993865004,
+      "impact": "negligible",
+      "breaks_at": null
+    },
+    {
+      "label": "CHECKOUT_ABANDONED tier 2 lift",
+      "kind": "marginal_one",
+      "key": "('CHECKOUT_ABANDONED', 2)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3328220858895706,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.14263803680981596,
+          "ci_lower": 0.07236605073670427,
+          "ci_upper": 0.21291002288292765,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.14263803680981596,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.15337423312883347,
+      "impact": "negligible",
+      "breaks_at": null
+    },
+    {
+      "label": "DEAD baseline",
+      "kind": "baseline_one",
+      "key": "DEAD",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1441717791411043,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.0,
+      "impact": "negligible",
+      "breaks_at": null
+    },
+    {
+      "label": "MANUAL_REVIEW baseline",
+      "kind": "baseline_one",
+      "key": "MANUAL_REVIEW",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1441717791411043,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.0,
+      "impact": "negligible",
+      "breaks_at": null
+    },
+    {
+      "label": "MANUAL_REVIEW tier 4 lift",
+      "kind": "marginal_one",
+      "key": "('MANUAL_REVIEW', 4)",
+      "points": [
+        {
+          "factor": 0.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 0.8,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.2,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.4,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 1.6,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        },
+        {
+          "factor": 2.0,
+          "treatment_rate": 0.3343558282208589,
+          "control_rate": 0.1901840490797546,
+          "net_lift": 0.1441717791411043,
+          "ci_lower": 0.07387839617315316,
+          "ci_upper": 0.21446516210905542,
+          "is_significant": true
+        }
+      ],
+      "low_lift": 0.1441717791411043,
+      "high_lift": 0.1441717791411043,
+      "swing_pp": 0.0,
+      "impact": "negligible",
+      "breaks_at": null
+    }
+  ],
+  "material_count": 10,
+  "breakers": [
+    {
+      "label": "Every marginal lift per rung",
+      "breaks_at": 0.4,
+      "breaking_point": 0.759,
+      "wrong_by_pct": 24
+    }
+  ],
+  "conclusion_holds": false
+}
