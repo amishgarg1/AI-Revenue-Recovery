@@ -34,3 +34,5 @@ services:
         sync: false
       - key: GROQ_API_KEY
         sync: false
+      - key: RZP_WEBHOOK_SECRET
+        sync: false
