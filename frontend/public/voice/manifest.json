@@ -1,0 +1,144 @@
+{
+  "speaker": "priya",
+  "model": "bulbul:v3",
+  "clips": {
+    "case_0739": {
+      "language": "en",
+      "written": "Hello Aarav Gupta. This is an automated reminder call from Demo Merchant. Your invoice inv_004 for Rs 41,651.00 has been pending for 31 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Aarav Gupta. This is an automated reminder call from Demo Merchant. Your invoice oh oh four for forty one thousand six hundred fifty one rupees has been pending for thirty one days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0739.wav"
+    },
+    "case_0740": {
+      "language": "hi",
+      "written": "Namaste Tara Sharma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice inv_005, amount Rs 89,670.00, 30 din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Tara Sharma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice oh oh five, amount eighty nine thousand six hundred seventy rupees, thirty din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0740.wav"
+    },
+    "case_0743": {
+      "language": "hi",
+      "written": "Namaste Devansh Sharma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice inv_008, amount Rs 32,423.00, 21 din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Devansh Sharma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice oh oh eight, amount thirty two thousand four hundred twenty three rupees, twenty one din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0743.wav"
+    },
+    "case_0744": {
+      "language": "hi",
+      "written": "Namaste Devansh Chauhan ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice inv_009, amount Rs 99,079.00, 41 din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Devansh Chauhan ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice oh oh nine, amount ninety nine thousand seventy nine rupees, forty one din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0744.wav"
+    },
+    "case_0747": {
+      "language": "hinglish",
+      "written": "Namaste Ishaan Bhatt ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_012, amount Rs 93,256.00, 22 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Ishaan Bhatt ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh one two, amount ninety three thousand two hundred fifty six rupees, twenty two din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0747.wav"
+    },
+    "case_0748": {
+      "language": "en",
+      "written": "Hello Diya Joshi. This is an automated reminder call from Demo Merchant. Your invoice inv_013 for Rs 31,268.00 has been pending for 42 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Diya Joshi. This is an automated reminder call from Demo Merchant. Your invoice oh one three for thirty one thousand two hundred sixty eight rupees has been pending for forty two days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0748.wav"
+    },
+    "case_0759": {
+      "language": "en",
+      "written": "Hello Ishaan Verma. This is an automated reminder call from Demo Merchant. Your invoice inv_024 for Rs 15,519.00 has been pending for 20 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Ishaan Verma. This is an automated reminder call from Demo Merchant. Your invoice oh two four for fifteen thousand five hundred nineteen rupees has been pending for twenty days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0759.wav"
+    },
+    "case_0761": {
+      "language": "en",
+      "written": "Hello Sanya Rao. This is an automated reminder call from Demo Merchant. Your invoice inv_026 for Rs 115,358.00 has been pending for 7 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Sanya Rao. This is an automated reminder call from Demo Merchant. Your invoice oh two six for one lakh fifteen thousand three hundred fifty eight rupees has been pending for seven days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0761.wav"
+    },
+    "case_0764": {
+      "language": "en",
+      "written": "Hello Anika Rao. This is an automated reminder call from Demo Merchant. Your invoice inv_029 for Rs 12,485.00 has been pending for 38 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Anika Rao. This is an automated reminder call from Demo Merchant. Your invoice oh two nine for twelve thousand four hundred eighty five rupees has been pending for thirty eight days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0764.wav"
+    },
+    "case_0773": {
+      "language": "en",
+      "written": "Hello Aditya Kulkarni. This is an automated reminder call from Demo Merchant. Your invoice inv_038 for Rs 48,343.00 has been pending for 26 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Aditya Kulkarni. This is an automated reminder call from Demo Merchant. Your invoice oh three eight for forty eight thousand three hundred forty three rupees has been pending for twenty six days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0773.wav"
+    },
+    "case_0775": {
+      "language": "en",
+      "written": "Hello Sanya Chauhan. This is an automated reminder call from Demo Merchant. Your invoice inv_040 for Rs 43,663.00 has been pending for 43 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Sanya Chauhan. This is an automated reminder call from Demo Merchant. Your invoice oh four oh for forty three thousand six hundred sixty three rupees has been pending for forty three days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0775.wav"
+    },
+    "case_0778": {
+      "language": "hi",
+      "written": "Namaste Arjun Verma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice inv_043, amount Rs 53,390.00, 6 din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Arjun Verma ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice oh four three, amount fifty three thousand three hundred ninety rupees, six din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0778.wav"
+    },
+    "case_0779": {
+      "language": "hinglish",
+      "written": "Namaste Vivaan Chauhan ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_044, amount Rs 58,299.00, 16 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Vivaan Chauhan ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh four four, amount fifty eight thousand two hundred ninety nine rupees, sixteen din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0779.wav"
+    },
+    "case_0780": {
+      "language": "hinglish",
+      "written": "Namaste Rohan Joshi ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_045, amount Rs 28,636.00, 28 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Rohan Joshi ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh four five, amount twenty eight thousand six hundred thirty six rupees, twenty eight din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0780.wav"
+    },
+    "case_0791": {
+      "language": "hi",
+      "written": "Namaste Kavya Gupta ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice inv_056, amount Rs 88,455.00, 9 din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Kavya Gupta ji. Main Demo Merchant ki taraf se ek automated reminder call kar raha hoon. Aapka invoice oh five six, amount eighty eight thousand four hundred fifty five rupees, nine din se pending hai. Payment ke liye humne aapko WhatsApp par link bheja hai. Payment date confirm karne ke liye ek dabaiye, baad mein call ke liye do, aur aage calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0791.wav"
+    },
+    "case_0796": {
+      "language": "hinglish",
+      "written": "Namaste Aditya Desai ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_061, amount Rs 23,784.00, 35 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Aditya Desai ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh six one, amount twenty three thousand seven hundred eighty four rupees, thirty five din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0796.wav"
+    },
+    "case_0797": {
+      "language": "en",
+      "written": "Hello Yash Kulkarni. This is an automated reminder call from Demo Merchant. Your invoice inv_062 for Rs 133,007.00 has been pending for 23 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Yash Kulkarni. This is an automated reminder call from Demo Merchant. Your invoice oh six two for one lakh thirty three thousand seven rupees has been pending for twenty three days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0797.wav"
+    },
+    "case_0801": {
+      "language": "hinglish",
+      "written": "Namaste Devansh Chauhan ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_066, amount Rs 94,089.00, 24 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Devansh Chauhan ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh six six, amount ninety four thousand eighty nine rupees, twenty four din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0801.wav"
+    },
+    "case_0803": {
+      "language": "en",
+      "written": "Hello Aarav Pillai. This is an automated reminder call from Demo Merchant. Your invoice inv_068 for Rs 109,380.00 has been pending for 40 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Aarav Pillai. This is an automated reminder call from Demo Merchant. Your invoice oh six eight for one lakh nine thousand three hundred eighty rupees has been pending for forty days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0803.wav"
+    },
+    "case_0808": {
+      "language": "en",
+      "written": "Hello Riya Desai. This is an automated reminder call from Demo Merchant. Your invoice inv_073 for Rs 29,340.00 has been pending for 28 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Riya Desai. This is an automated reminder call from Demo Merchant. Your invoice oh seven three for twenty nine thousand three hundred forty rupees has been pending for twenty eight days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0808.wav"
+    },
+    "case_0811": {
+      "language": "en",
+      "written": "Hello Sanya Iyer. This is an automated reminder call from Demo Merchant. Your invoice inv_076 for Rs 44,517.00 has been pending for 28 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Sanya Iyer. This is an automated reminder call from Demo Merchant. Your invoice oh seven six for forty four thousand five hundred seventeen rupees has been pending for twenty eight days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0811.wav"
+    },
+    "case_0813": {
+      "language": "hinglish",
+      "written": "Namaste Sanya Bose ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice inv_078, amount Rs 131,000.00, 25 din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "spoken": "Namaste Sanya Bose ji. Yeh Demo Merchant ki taraf se automated reminder call hai. Aapka invoice oh seven eight, amount one lakh thirty one thousand rupees, twenty five din se pending hai. Payment link WhatsApp par bhej diya hai. Date confirm karne ke liye ek dabaiye, baad mein call ke liye do, calls band karne ke liye nau dabaiye.",
+      "audio": "/voice/case_0813.wav"
+    },
+    "case_0814": {
+      "language": "en",
+      "written": "Hello Aditya Nair. This is an automated reminder call from Demo Merchant. Your invoice inv_079 for Rs 73,424.00 has been pending for 3 days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "spoken": "Hello Aditya Nair. This is an automated reminder call from Demo Merchant. Your invoice oh seven nine for seventy three thousand four hundred twenty four rupees has been pending for three days. We have sent a payment link on WhatsApp. To confirm a payment date press one, to be called back later press two, and to stop these calls press nine.",
+      "audio": "/voice/case_0814.wav"
+    }
+  }
+}
